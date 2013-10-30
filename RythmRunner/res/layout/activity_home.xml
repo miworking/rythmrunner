@@ -15,21 +15,21 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/profileButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/profile"
             android:layout_weight="1"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/activityButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/activity" 
             android:layout_weight="1"/>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/workoutButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/workout" 

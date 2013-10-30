@@ -10,5 +10,6 @@
     <string name="welcome_text">Welcome text</string>
     <string name="home_image_description">Home page image.</string>
     <string name="former_activity">Text about former activity</string>
+    <string name="music_settings">Music settings</string>
 
 </resources>

@@ -14,13 +14,29 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.popag.rhythmrunner.HomeActivity"
+            android:name="com.popag.rhythmrunner.activity.HomeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.popag.rhythmrunner.activity.ProfileActivity"
+            android:label="@string/profile" >
+        </activity>
+        <activity
+            android:name="com.popag.rhythmrunner.activity.ActivityActivity"
+            android:label="@string/activity" >
+        </activity>
+        <activity
+            android:name="com.popag.rhythmrunner.activity.WorkoutActivity"
+            android:label="@string/workout" >
+        </activity>
+        <activity
+            android:name="com.popag.rhythmrunner.activity.MusicControllerActivity"
+            android:label="@string/music_settings">
         </activity>
     </application>
 
