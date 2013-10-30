@@ -73,6 +73,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
         android:baselineAligned="false"
         android:orientation="horizontal" >
 
@@ -155,46 +159,50 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" 
-        android:paddingTop="50dip">
+        android:orientation="horizontal"
+        android:paddingTop="50dip" >
 
         <Button
+            android:id="@+id/resyncButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" 
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/resync"/>
+            android:text="@string/resync" />
 
         <Button
+            android:id="@+id/spmUpButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" 
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/spm_up"/>
+            android:text="@string/spm_up" />
 
         <Button
+            android:id="@+id/spmDownButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" 
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/spm_down"/>
+            android:text="@string/spm_down" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" 
-        android:paddingTop="20dip">
+        android:orientation="horizontal"
+        android:paddingTop="20dip" >
 
-    	<Button
-    	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content"
-    	    android:layout_weight="2" 
-    	    android:text="@string/play_pause"/>
+        <Button
+            android:id="@+id/playPauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/play_pause" />
 
-    	<Button
-    	    android:layout_width="wrap_content"
-    	    android:layout_height="wrap_content" 
-    	    android:layout_weight="1"
-    	    android:text="@string/stop"/>
-
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stop" />
     </LinearLayout>
 
 </LinearLayout>
