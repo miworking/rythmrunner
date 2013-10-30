@@ -9,12 +9,12 @@ import android.view.Menu;
  * @author Csenge Pop
  *
  */
-public class StartActivity extends Activity {
+public class HomeActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_start);
+		setContentView(R.layout.activity_home);
 	}
 
 	@Override
