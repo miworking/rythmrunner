@@ -4,5 +4,8 @@
     <string name="app_name">RythmRunner</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="profile">Profile</string>
+    <string name="activity">Activity</string>
+    <string name="workout">Workout</string>
 
 </resources>
