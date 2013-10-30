@@ -24,5 +24,19 @@
         <string name="weight_">Weight:</string>
         <string name="kg">kg</string>
         <string name="age_">Age:</string>
+        <string name="zero">0</string>
+        <string name="steps">steps</string>
+        <string name="steps_minute">steps/minute</string>
+        <string name="target_steps_minute">target steps/minute</string>
+        <string name="kcal_burned">kcal burned</string>
+        <string name="minutes">minutes</string>
+        <string name="kilometers">kilometers</string>
+        <string name="song_info">Artist and Title of Music</string>
+        <string name="song_time">Time</string>
+        <string name="resync">Resync</string>
+        <string name="spm_up">SPM up</string>
+        <string name="spm_down">SPM down</string>
+        <string name="play_pause">Play/Pause</string>
+        <string name="stop">Stop</string>
 
 </resources>

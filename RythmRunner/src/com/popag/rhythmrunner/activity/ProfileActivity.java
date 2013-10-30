@@ -24,7 +24,7 @@ public class ProfileActivity extends Activity {
 
 	@SuppressLint("NewApi")
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(final Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_profile);
 
@@ -51,7 +51,7 @@ public class ProfileActivity extends Activity {
 	}
 
 	private Gender getGender() {
-		String genderString = (String) genderSpinner.getSelectedItem();
+		final String genderString = (String) genderSpinner.getSelectedItem();
 		return Gender.valueOf(genderString);
 	}
 }
