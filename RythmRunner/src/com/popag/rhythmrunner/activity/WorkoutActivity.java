@@ -16,6 +16,8 @@ import com.popag.rythmrunner.R;
  * @author Csenge Pop
  */
 public class WorkoutActivity extends Activity {
+	protected static final CharSequence PAUSE = "Pause";
+	protected static final CharSequence RUN = "Run";
 	private TextView stepsText;
 	private TextView spmText;
 	private TextView targetSpmText;
@@ -26,7 +28,9 @@ public class WorkoutActivity extends Activity {
 	private Button spmUpButton;
 	private Button spmDownButton;
 	private Button stopButton;
-	private Button playPauseButton;
+	private Button runPauseButton;
+	
+	private boolean running = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -65,11 +69,17 @@ public class WorkoutActivity extends Activity {
 			}
 		});
 
-		playPauseButton.setOnClickListener(new OnClickListener() {
+		runPauseButton.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				buttonPushed(playPauseButton);
+				buttonPushed(runPauseButton);
+				if (isRunning()) {
+					runPauseButton.setText(PAUSE);
+				} else {
+					runPauseButton.setText(RUN);
+				}
+				setRunning(!isRunning());
 			}
 		});
 
@@ -98,7 +108,15 @@ public class WorkoutActivity extends Activity {
 		resyncButton = (Button) findViewById(R.id.resyncButton);
 		spmUpButton = (Button) findViewById(R.id.spmUpButton);
 		spmDownButton = (Button) findViewById(R.id.spmDownButton);
-		playPauseButton = (Button) findViewById(R.id.playPauseButton);
+		runPauseButton = (Button) findViewById(R.id.playPauseButton);
 		stopButton = (Button) findViewById(R.id.stopButton);
+	}
+
+	public boolean isRunning() {
+		return running;
+	}
+
+	public void setRunning(boolean running) {
+		this.running = running;
 	}
 }

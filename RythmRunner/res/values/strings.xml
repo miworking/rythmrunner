@@ -36,7 +36,7 @@
         <string name="resync">Resync</string>
         <string name="spm_up">SPM up</string>
         <string name="spm_down">SPM down</string>
-        <string name="play_pause">Play/Pause</string>
+        <string name="run_pause">Run</string>
         <string name="stop">Stop</string>
 
 </resources>

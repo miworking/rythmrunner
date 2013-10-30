@@ -77,10 +77,10 @@ public final class R {
         public static final int kilometers=0x7f050018;
         public static final int minutes=0x7f050017;
         public static final int music_settings=0x7f050009;
-        public static final int play_pause=0x7f05001e;
         public static final int profile=0x7f050003;
         public static final int profile_description=0x7f05000b;
         public static final int resync=0x7f05001b;
+        public static final int run_pause=0x7f05001e;
         public static final int song_info=0x7f050019;
         public static final int song_time=0x7f05001a;
         public static final int spm_down=0x7f05001d;
