@@ -38,19 +38,29 @@
     
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content" 
+            android:text="@string/welcome_text"
+            android:paddingTop="20dip"/>
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/home_image_description"
+            android:scaleType="center"
+            android:src="@drawable/running_with_music"
+            android:paddingTop="20dip"/>
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content" 
+            android:text="@string/former_activity"
+            android:paddingTop="20dip"/>
 
     </LinearLayout>
 

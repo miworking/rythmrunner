@@ -1,4 +1,6 @@
-package com.popag.rythmrunner;
+package com.popag.rhythmrunner;
+
+import com.popag.rythmrunner.R;
 
 import android.os.Bundle;
 import android.app.Activity;
