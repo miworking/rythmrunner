@@ -35,12 +35,12 @@ public final class R {
         public static final int genderSpinner=0x7f090006;
         public static final int heightText=0x7f090007;
         public static final int kcal=0x7f09000d;
-        public static final int musicButton=0x7f090005;
         public static final int musicControllerButton=0x7f090017;
         public static final int musicSwitch=0x7f090003;
         public static final int playPauseButton=0x7f090015;
         public static final int profileButton=0x7f090000;
         public static final int resyncButton=0x7f090012;
+        public static final int skipSongButton=0x7f090005;
         public static final int song_info=0x7f090010;
         public static final int song_time=0x7f090011;
         public static final int spm=0x7f09000b;

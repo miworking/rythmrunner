@@ -36,7 +36,7 @@ public class WorkoutActivity extends Activity {
 	private Context context;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(final Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_workout);
@@ -51,7 +51,7 @@ public class WorkoutActivity extends Activity {
 		resyncButton.setOnClickListener(new OnClickListener() {
 
 			@Override
-			public void onClick(View v) {
+			public void onClick(final View v) {
 				buttonPushed(resyncButton);
 			}
 		});
@@ -59,7 +59,7 @@ public class WorkoutActivity extends Activity {
 		spmUpButton.setOnClickListener(new OnClickListener() {
 
 			@Override
-			public void onClick(View v) {
+			public void onClick(final View v) {
 				buttonPushed(spmUpButton);
 			}
 		});
@@ -67,7 +67,7 @@ public class WorkoutActivity extends Activity {
 		spmDownButton.setOnClickListener(new OnClickListener() {
 
 			@Override
-			public void onClick(View v) {
+			public void onClick(final View v) {
 				buttonPushed(spmDownButton);
 			}
 		});
@@ -75,7 +75,7 @@ public class WorkoutActivity extends Activity {
 		runPauseButton.setOnClickListener(new OnClickListener() {
 
 			@Override
-			public void onClick(View v) {
+			public void onClick(final View v) {
 				buttonPushed(runPauseButton);
 				if (isRunning()) {
 					runPauseButton.setText(PAUSE);
@@ -89,7 +89,7 @@ public class WorkoutActivity extends Activity {
 		stopButton.setOnClickListener(new OnClickListener() {
 
 			@Override
-			public void onClick(View v) {
+			public void onClick(final View v) {
 				buttonPushed(stopButton);
 			}
 		});
@@ -97,15 +97,15 @@ public class WorkoutActivity extends Activity {
 		musicControllerButton.setOnClickListener(new OnClickListener() {
 			
 			@Override
-			public void onClick(View v) {
-				Intent musicIntent = new Intent(context, MusicControllerActivity.class);
+			public void onClick(final View v) {
+				final Intent musicIntent = new Intent(context, MusicControllerActivity.class);
 				startActivity(musicIntent);
 			}
 		});
 
 	}
 
-	private void buttonPushed(Button button) {
+	private void buttonPushed(final Button button) {
 		System.out.println("Button: " + button.getText().toString()
 				+ " pushed.");
 	}
@@ -129,7 +129,7 @@ public class WorkoutActivity extends Activity {
 		return running;
 	}
 
-	public void setRunning(boolean running) {
+	public void setRunning(final boolean running) {
 		this.running = running;
 	}
 }
