@@ -2,6 +2,7 @@ package com.popag.rhythmrunner.activity;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,8 +30,10 @@ public class WorkoutActivity extends Activity {
 	private Button spmDownButton;
 	private Button stopButton;
 	private Button runPauseButton;
+	private Button musicControllerButton;
 	
 	private boolean running = false;
+	private Context context;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +41,7 @@ public class WorkoutActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_workout);
 
-		Context context = (Context) this;
+		context = (Context) this;
 
 		findViews();
 		addOnclickListeners();
@@ -90,6 +93,15 @@ public class WorkoutActivity extends Activity {
 				buttonPushed(stopButton);
 			}
 		});
+		
+		musicControllerButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent musicIntent = new Intent(context, MusicControllerActivity.class);
+				startActivity(musicIntent);
+			}
+		});
 
 	}
 
@@ -110,6 +122,7 @@ public class WorkoutActivity extends Activity {
 		spmDownButton = (Button) findViewById(R.id.spmDownButton);
 		runPauseButton = (Button) findViewById(R.id.playPauseButton);
 		stopButton = (Button) findViewById(R.id.stopButton);
+		musicControllerButton = (Button) findViewById(R.id.musicControllerButton);
 	}
 
 	public boolean isRunning() {

@@ -204,5 +204,12 @@
             android:layout_weight="1"
             android:text="@string/stop" />
     </LinearLayout>
+    
+    <Button
+        android:id="@+id/musicControllerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/music_controller_"/>
 
 </LinearLayout>
