@@ -80,14 +80,14 @@ class WorkoutAdapter extends ArrayAdapter<Workout> {
 				parent, false);
 
 		final TextView firstLineText = (TextView) rowView
-				.findViewById(R.id.firstLine);
+				.findViewById(R.id.firstLineText);
 		firstLineText.setText(workouts.get(position).getDate().toLocaleString());
 		
-		final TextView secondLineText = (TextView) rowView.findViewById(R.id.secondLine);
+		final TextView secondLineText = (TextView) rowView.findViewById(R.id.secondLineText);
 		secondLineText.setText("Distance: " + workouts.get(position).getDistance() + ".");
 
-		final ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
-		imageView.setImageResource(R.drawable.running_with_music);
+		final ImageView imageView = (ImageView) rowView.findViewById(R.id.workoutImage);
+		imageView.setImageResource(R.drawable.ic_launcher);
 
 		return rowView;
 	}

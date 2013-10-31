@@ -33,17 +33,16 @@ public final class R {
         public static final int activityListView=0x7f090000;
         public static final int agePicker=0x7f09000a;
         public static final int distance=0x7f090010;
-        public static final int firstLine=0x7f09001b;
+        public static final int firstLineText=0x7f090019;
         public static final int genderSpinner=0x7f090007;
         public static final int heightText=0x7f090008;
-        public static final int icon=0x7f090019;
         public static final int kcal=0x7f09000e;
         public static final int musicControllerButton=0x7f090018;
         public static final int musicSwitch=0x7f090004;
         public static final int playPauseButton=0x7f090016;
         public static final int profileButton=0x7f090001;
         public static final int resyncButton=0x7f090013;
-        public static final int secondLine=0x7f09001a;
+        public static final int secondLineText=0x7f09001a;
         public static final int skipSongButton=0x7f090006;
         public static final int song_info=0x7f090011;
         public static final int song_time=0x7f090012;
@@ -57,6 +56,7 @@ public final class R {
         public static final int volumeSeekBar=0x7f090005;
         public static final int weightText=0x7f090009;
         public static final int workoutButton=0x7f090003;
+        public static final int workoutImage=0x7f09001b;
     }
     public static final class layout {
         public static final int activity_activity=0x7f030000;
@@ -75,6 +75,7 @@ public final class R {
         public static final int age_=0x7f050011;
         public static final int app_name=0x7f050000;
         public static final int cm=0x7f05000e;
+        public static final int first_line=0x7f050024;
         public static final int former_activity=0x7f050008;
         public static final int gender_=0x7f05000a;
         public static final int gender_prompt=0x7f05000c;
@@ -92,6 +93,7 @@ public final class R {
         public static final int profile_description=0x7f05000b;
         public static final int resync=0x7f05001b;
         public static final int run_pause=0x7f05001e;
+        public static final int second_line=0x7f050025;
         public static final int skip_song=0x7f050022;
         public static final int song_info=0x7f050019;
         public static final int song_time=0x7f05001a;

@@ -42,5 +42,7 @@
         <string name="volume_">Volume</string>
         <string name="skip_song">Skip song</string>
         <string name="music_controller_">Music controller ></string>
+        <string name="first_line">First line</string>
+        <string name="second_line">Second line</string>
 
 </resources>
